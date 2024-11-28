@@ -5,11 +5,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class App {
-	ArrayList<WiseSaying> wiseSayings = new ArrayList<>();
-	Scanner scanner = new Scanner(System.in);
-	int lastld = 0;
+	private final ArrayList<WiseSaying> wiseSayings;
+	private final Scanner scanner;
+	private int lastld;
 
-
+	public App() {
+		wiseSayings = new ArrayList<>();
+		scanner = new Scanner(System.in);
+		lastld = 0;
+}
 	public void run(){
 		System.out.println("===명언 앱===");
 
